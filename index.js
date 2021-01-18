@@ -117,7 +117,7 @@ particlesJS("particles-js", {
 
 //Typed-js stuff
 const typed = new Typed('#typed', {
-  strings: ['<h1> Bruno Talarico, ^500 <br> Software Engineer </h1>'],
+  strings: ['<h1> Bruno Talarico ^500 <br> Software Engineer </h1>'],
   typeSpeed: 65,
   showCursor: false,
   contentType: 'html'

@@ -9,7 +9,7 @@
 }
 
 .header-card {
-  width: auto;
+  width: auto !important;
   position: absolute;
   left: 15%;
   top: 50%;
