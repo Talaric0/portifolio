@@ -10,18 +10,20 @@
   <link rel="icon" href="images/code.png">
   <title>Bruno Talarico</title>
   <script src="https://kit.fontawesome.com/7729fa8539.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.js" integrity="sha512-wXjRau78uC9+ICxSqWQ9WxUHqxtvCsn+Ubev7P6rvtXYGmYwQYOgocXfPuMIuER2gX59Fp7vbZwBmFYTh6xUPw==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/onepage-scroll.css" integrity="sha512-pF+DLUBgoBIJF/rf87EDiEOc1VgCvbP7ZkH1luPi3WPqG98OX14tultzwYAnvWw0jxzfSmfh/8K+puHDLIhGoQ==" crossorigin="anonymous" />
 </head>
 <body>
-
-  <section>
-    <div id="header">
+  <div class="main">
+    <section id="header">
       <div id="particles-js">
         <div class="header-card container">
           <div class="header-avatar"></div>
           <div class="header-text">
             <span id="typed"></span>
           </div>
-          <div class="header-icons">
+          <div class="header-icons mt-3">
             <a href="mailto:bruno.talarico@gmail.com">
               <i class="icon fas fa-envelope"></i>
             </a>
@@ -34,8 +36,92 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  
+    <section id="about" class="pt-5">
+      <div class="container">
+        <div class="glass pt-3">
+          <div class="about m-5">
+            <h3>About me</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet esse mollitia similique nostrum, maiores, quam rerum ad culpa quidem deserunt rem iure incidunt ducimus, a eligendi aliquam voluptatem repudiandae ut.</p>
+          </div>
+          <div class="languages m-5">
+            <h3>Stack</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet esse mollitia similique nostrum, maiores, quam rerum ad culpa quidem deserunt rem iure incidunt ducimus, a eligendi aliquam voluptatem repudiandae ut.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="projects" class="pt-5 pb-5">
+      <div class="container">
+        <div class="glass pt-3 pb-3">
+          <h3>Projects I've worked on</h3>
+          <div class="projects">
+            
+            <div class="card-trip">
+              <img src="http://www.indigenius.space/assets/cover-d2cbda14eab0ffc8d29b0645a403e42e08de4c7866970dc4e9814948e55c28ea.png" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2 class="p-2">Indigenius</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste qui eligendi vitae, omnis obcaecati sit accusantium dicta et recusandae, ullam, expedita necessitatibus molestias quae laborum eveniet quisquam nihil quod.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-trip">
+              <img src="./images/multiverse.png" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2 class="p-2">Dream Multiverse Vacation</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione similique numquam sapiente. Laudantium labore ipsa quibusdam quasi nam, dignissimos, quod officia ipsam nostrum beatae excepturi laborum, eligendi reprehenderit iusto!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-trip">
+              <img src="http://www.indigenius.space/assets/cover-d2cbda14eab0ffc8d29b0645a403e42e08de4c7866970dc4e9814948e55c28ea.png" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2 class="p-2">Indigenius</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste qui eligendi vitae, omnis obcaecati sit accusantium dicta et recusandae, ullam, expedita necessitatibus molestias quae laborum eveniet quisquam nihil quod.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-trip">
+              <img src="./images/multiverse.png" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2 class="p-2">Dream Multiverse Vacation</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione similique numquam sapiente. Laudantium labore ipsa quibusdam quasi nam, dignissimos, quod officia ipsam nostrum beatae excepturi laborum, eligendi reprehenderit iusto!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="employment" class="pt-5">
+      <div class="container">
+        <div class="glass pt-3">
+          <div class="education-employment m-5">
+            <div class="education">
+              <h3>Education</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellat nulla nesciunt nemo totam quisquam aut velit aspernatur officiis recusandae, assumenda quos rerum quae? Nobis reiciendis repellat facere veritatis sint?</p>
+            </div>
+            <div class="employment mt-5">
+              <h3>Employment</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, accusantium. Reiciendis nesciunt fugit atque iste nostrum doloribus maiores esse provident sunt repellat, modi, quo asperiores. Suscipit omnis voluptate facilis optio!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
   
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
