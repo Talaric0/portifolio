@@ -66,6 +66,52 @@ html {
   z-index: -10;
 }
 
+/* ARROW DOWN */
+.arrow-down {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arrow-down::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: -80%;
+  left: 0;
+  border-right: 5px solid #ffd8d8;
+  border-bottom: 5px solid #ffd8d8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: 3s arrow infinite ease;
+  animation: 3s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+  0%,
+  100% {
+    top: 50px;
+  }
+  50% {
+    top: 80px;
+  }
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+    top: 50px;
+  }
+  50% {
+    top: 80px;
+  }
+}
+/* /ARROW DOWN */
+
 
 /* /HEADER */
 /* ABOUT */
@@ -91,7 +137,6 @@ html {
   text-align: center;
 }
 
-
 /* /ABOUT */
 /* PROJECTS */
 
@@ -108,6 +153,15 @@ html {
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   justify-content: space-evenly;
+}
+
+.projects > a {
+  text-decoration: none;
+  color:  rgb(244 233 219 / 96%);
+}
+
+.projects > a:hover {
+  color:  rgb(244 233 219 / 96%);
 }
 
 /* CARDS */
@@ -154,6 +208,12 @@ html {
 
 /* /cards */
 
+.github {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
 
 /* /PROJECTS */
 /* EMPLOYMENT */
@@ -165,6 +225,36 @@ html {
   background: radial-gradient(circle, rgba(0,137,187,1) 0%, rgb(141, 75, 138) 100%);
 }
 
-.education-employment {
+.resume {
+  text-align: center;
+}
 
+.resume-btn {
+  transition: all 1s !important;
+  font-size: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    display: block;
+  }
+
+  .card-trip {
+    margin: 1.1rem;
+    width: 85%;
+  }
+
+  .card-trip > img {
+    height: 84px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projects {
+    column-gap: 0px;
+}
 }
