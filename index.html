@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Bruno Talarico, Software Engineer">
-  <meta property="og:description" content="Personal Portfolio">
-  <meta property="og:image" content="./images/preview.png">
+  <meta name="author" content="Bruno Talarico">
+  <meta name="description" content="Bruno Talarico's personal website">
+  <meta name="keywords" content="developer,software,ruby,ruby on rails,javascript,react,redux">
+  <!-- Facebook open graph data -->
+  <meta property="og:title" content="Bruno Talarico - Software Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Bruno Talarico's personal portifolio">
+  <meta property="og:url" content="https://talarico.dev">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Talaric0/portifolio/master/images/preview.webp">
+  <meta property="og:site_name" content="Talarico.dev">
+  <!-- end- facebook open graph data -->
+  <!-- Twitter card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@product_twitter_account">
+  <meta name="twitter:title" content="Bruno Talarico - Software Developer">
+  <meta name="twitter:description" content="Bruno Talarico's personal portifolio">
+  <meta name="twitter:creator" content="@product_twitter_account">
+  <meta name="twitter:image:src" content="https://raw.githubusercontent.com/Talaric0/portifolio/master/images/preview.webp">
+  <!-- end- twitter card data -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="icon" href="images/code.png">
@@ -26,13 +42,13 @@
             <span id="typed"></span>
           </div>
           <div class="header-icons mt-3">
-            <a href="mailto:bruno.talarico@gmail.com">
+            <a href="mailto:bruno.talarico@gmail.com" rel="noopener" aria-label="e-mail me">
               <i class="icon fas fa-envelope"></i>
             </a>
-            <a href="https://www.linkedin.com/in/bruno-talarico-4421741ab/" target="_blank">
+            <a href="https://www.linkedin.com/in/bruno-talarico-4421741ab/" rel="noopener" aria-label="linkedin" target="_blank">
               <i class="icon fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/talaric0" target="_blank">
+            <a href="https://github.com/talaric0" rel="noopener" aria-label="github" target="_blank">
               <i class="icon fab fa-github"></i>
             </a>
           </div>
@@ -45,7 +61,7 @@
       <div class="container">
         <div class="glass pt-3">
           <div class="about m-4">
-            <h3>About me</h3>
+            <h2>About me</h2>
             <br>
             <p>
               🌍 I'm a 31 yo developer born and raised in Rio, currently based in London.
@@ -53,12 +69,12 @@
               <br><br class="hide-on-mobile"> 📲 I’m currently working on improving my frontend skills with React/Redux.
             </p>
             <br><br class="hide-on-mobile">
-            <h6>👇 Hit in your console or terminal to check my npx business card.</h6>
+            <span>👇 Hit in your console or terminal to check my npx business card.</span>
             <br class="hide-on-mobile">
             <pre><code class="zsh p-4"><span>npx talaric0</span></code></pre>
           </div>
           <div class="languages m-4">
-            <h3>Stack / Skills</h3>
+            <h2>Stack / Skills</h2>
             <br class="hide-on-mobile">
             <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
             <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3" alt="CSS3">
@@ -84,12 +100,12 @@
     <section id="projects" class="pt-5 pb-5">
       <div class="container">
         <div class="glass pt-3 pb-3">
-          <h3>Projects I've worked on</h3>
+          <h2>Projects I've worked on</h2>
           <div class="projects">
             
-            <a href="https://www.indigenius.space/" target="_blank">
+            <a href="https://www.indigenius.space/" rel="noopener" target="_blank">
               <div class="card-trip">
-                <img src="http://www.indigenius.space/assets/cover-d2cbda14eab0ffc8d29b0645a403e42e08de4c7866970dc4e9814948e55c28ea.png" />
+                <img src="./images/indigineus.webp" alt="indigenius"/>
                 <div class="card-trip-infos">
                   <div>
                     <h2 class="p-2">Indigenius</h2>
@@ -99,9 +115,9 @@
               </div>
             </a>
 
-            <a href="http://multiverse-vacation.herokuapp.com/" target="_blank">
+            <a href="http://multiverse-vacation.herokuapp.com/" rel="noopener" target="_blank">
               <div class="card-trip">
-                <img src="./images/multiverse.png" />
+                <img src="./images/multiverse.webp" alt="multiverse-vacation"/>
                 <div class="card-trip-infos">
                   <div>
                     <h2 class="p-2">Dream Multiverse Vacation</h2>
@@ -111,9 +127,9 @@
               </div>
             </a>
 
-            <a href="https://talaric0.github.io/tic-tac-toe/" target="_blank">
+            <a href="https://talaric0.github.io/tic-tac-toe/" rel="noopener" target="_blank">
               <div class="card-trip">
-                <img src="./images/reac-tac-toe.png" />
+                <img src="./images/reac-tac-toe.webp" alt="tic-tac-toe"/>
                 <div class="card-trip-infos">
                   <div>
                     <h2 class="p-2">Reac-tac-toe</h2>
@@ -123,9 +139,9 @@
               </div>
             </a>
 
-            <a href="https://talaric0.github.io/chat-redux/" target="_blank">
+            <a href="https://talaric0.github.io/chat-redux/" rel="noopener" target="_blank">
               <div class="card-trip">
-                <img src="./images/react-redux-chat.png" />
+                <img src="./images/react-redux-chat.webp" alt="react-chat"/>
                 <div class="card-trip-infos">
                   <div>
                     <h2 class="p-2">React-Redux-Chat</h2>
@@ -137,7 +153,7 @@
           </div>
           
           <div class="github hide-on-mobile">
-            <h5>For more cool stuff, head to my GH profile</h5><a href="https://github.com/Talaric0" target="_blank"><img src="https://img.shields.io/badge/Talaric0%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GH"></a>
+            <p>For more cool stuff, head to my GH profile</p><a href="https://github.com/Talaric0" rel="noopener" target="_blank"><img src="https://img.shields.io/badge/Talaric0%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GH"></a>
           </div>
             
             
@@ -153,10 +169,10 @@
         <div class="glass pt-3">
           <div class="education-employment m-4">
             <div class="education">
-              <h3>Education</h3>
+              <h2>Education</h2>
 
               <div class="education-card">
-                <h5>Le Wagon Rio</h5>
+                <h3>Le Wagon Rio</h3>
                 <em>Fullstack Web Developer</em>
                 <p>Attended Le Wagon Rio (Batch #447). 9-week intensive coding bootcamp
                     learning HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and
@@ -169,7 +185,7 @@
               </div>
               <br>
               <div class="education-card">
-                <h5>Estácio de Sá</h5>
+                <h3>Estácio de Sá</h3>
                 <em>Bachelor's Degree in Aeronautical Science</em>
                 <p class="hide-on-mobile">Final course assignment focused on elucidating the sense of security of EGPWS
                     (Extended Ground Proximity Warning System) used to prevent Controlled Flight
@@ -179,10 +195,10 @@
 
             </div>
             <div class="employment mt-5">
-              <h3>Employment</h3>
+              <h2>Employment</h2>
               
               <div class="employment-card">
-                <h5>Teaching Assistant</h5>
+                <h3>Teaching Assistant</h3>
                 <em>Le Wagon</em>
                 <p>- Supporting students at Le Wagon's 9 weeks full stack web development
                     bootcamp. <br>
