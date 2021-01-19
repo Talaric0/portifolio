@@ -253,8 +253,30 @@ html {
   }
 }
 
+
+
 @media only screen and (max-width: 800px) {
   .projects {
     column-gap: 0px;
 }
+}
+
+@media only screen and (max-height: 750px) {
+  .about {
+    font-size: 0.9em;
+    margin: 20px;
+}
+  .card-trip .card-trip-infos {
+    padding: 0px;
+    font-size: 0.8em;
+  }
+
+  #projects {
+    padding-top: 20px !important;
+  }
+
+  #employment {
+    padding-top: 20px !important;
+  }
+
 }
