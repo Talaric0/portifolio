@@ -3,15 +3,6 @@
   padding: 0px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-.container {
-  height: 100%;
-}
-
-
 /* HEADER */
 
 #header {
@@ -118,6 +109,7 @@ html {
 
 
 /* /HEADER */
+
 /* ABOUT */
 
 #about {
@@ -132,7 +124,7 @@ html {
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 8.0px );
   -webkit-backdrop-filter: blur( 8.0px );
-  border-radius: 15px;
+  border-radius: 5px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   color:  rgb(244 233 219 / 96%);
   height: auto;
@@ -295,13 +287,13 @@ html {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width:601px) and (max-width: 800px) {
   .projects {
     column-gap: 0px;
 }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width:801px) and (max-width: 1200px) {
   .card-trip > img {
     height: 130px;
   }
