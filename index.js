@@ -118,14 +118,14 @@ particlesJS("particles-js", {
 //Typed-js stuff
 const typed = new Typed('#typed', {
   strings: ['<h1> Bruno Talarico ^500 <br> Software Developer </h1>'],
-  typeSpeed: 65,
+  typeSpeed: 55,
   showCursor: false,
   contentType: 'html'
 },
 );
 
 //one-scroll stuff
-
+/* 
 $(".main").onepage_scroll({
    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
    easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -142,3 +142,4 @@ $(".main").onepage_scroll({
                                     // the browser's width is less than 600, the fallback will kick in.
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 });
+ */
