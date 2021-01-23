@@ -28,12 +28,16 @@
   <title>Bruno Talarico</title>
   <script src="https://kit.fontawesome.com/7729fa8539.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.js" integrity="sha512-wXjRau78uC9+ICxSqWQ9WxUHqxtvCsn+Ubev7P6rvtXYGmYwQYOgocXfPuMIuER2gX59Fp7vbZwBmFYTh6xUPw==" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/onepage-scroll.css" integrity="sha512-pF+DLUBgoBIJF/rf87EDiEOc1VgCvbP7ZkH1luPi3WPqG98OX14tultzwYAnvWw0jxzfSmfh/8K+puHDLIhGoQ==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.3/smooth-scrollbar.js" integrity="sha512-EkxhY1yhXrjhnDu8o0mHvJHXbH5JsEWz2oNsrFrtW5q5J9l9hV8V5Oid6wpL3Dyu71wlc5YbLPNnul2b7FwNMQ==" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/a11y-dark.min.css" integrity="sha512-1rzCaYWsg3l6uKvGbUT6rAZFOcVn0zeXAFlZudsnj8k2xcrU5asL8jfJUEijV9GPYMh0GnPToeCTJj6RXQnA8g==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main">
+  <div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
     <section id="header">
       <div id="particles-js">
         <div class="header-card">
@@ -51,10 +55,15 @@
             <a href="https://github.com/talaric0" rel="noopener" aria-label="github" target="_blank">
               <i class="icon fab fa-github"></i>
             </a>
+            <a href="./resume.pdf" rel="noopener" aria-label="resume" target="_blank">
+              <i class="icon fa fa-file-text" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
-      <div class="arrow-down"></div>
+      <a href="#about">
+        <div class="arrow-down"></div>
+      </a>
     </section>
   
     <section id="about" class="pt-5">
@@ -92,8 +101,9 @@
           </div>
         </div>
       </div>
-
-      <div class="arrow-down"></div>
+      <a href="#projects">
+        <div class="arrow-down"></div>
+      </a>
 
     </section>
   
@@ -150,9 +160,24 @@
                 </div>
               </div>
             </a>
+
+            <a href="https://talaric0.github.io/react-recipes/" rel="noopener" target="_blank">
+              <div class="card-trip">
+                <img src="./images/recipes.webp" alt="react-recipes"/>
+                <div class="card-trip-infos">
+                  <div>
+                    <h2 class="p-2">React-Recipes-App</h2>
+                    <p class="hide-on-mobile">Recipes app consuming Edamam API.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
           </div>
+
           
-          <div class="github hide-on-mobile">
+          
+          <div class="github">
             <p>For more cool stuff, head to my GH profile</p><a href="https://github.com/Talaric0" rel="noopener" target="_blank"><img src="https://img.shields.io/badge/Talaric0%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GH"></a>
           </div>
             
@@ -160,7 +185,9 @@
         </div>
       </div>
 
-      <div class="arrow-down"></div>
+      <a href="#employment">
+        <div class="arrow-down"></div>
+      </a>
 
     </section>
 
@@ -202,12 +229,12 @@
                 <em>Le Wagon</em>
                 <p>- Supporting students at Le Wagon's 9 weeks full stack web development
                     bootcamp. <br>
-                  </p>
-                  <p class="hide-on-mobile">
-                    - Teaching students core concepts and helping them solve complex challenges in
-                    Ruby, Ruby on Rails, JavaScript, HTML, CSS, object-oriented programming and
-                    relational databases.
-                  </p>
+                </p>
+                <p>
+                  - Teaching students core concepts and helping them solve complex challenges in
+                  Ruby, Ruby on Rails, JavaScript, HTML, CSS, object-oriented programming and
+                  relational databases.
+                </p>
 
               </div>
               <div class="resume">
@@ -216,6 +243,11 @@
             </div>
           </div>
         </div>
+
+        <a href="#header">
+          <div class="arrow-up"></div>
+        </a>
+          
       </div>
     </section>
 
