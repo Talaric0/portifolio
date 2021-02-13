@@ -117,11 +117,11 @@ particlesJS("particles-js", {
 
 //Typed-js stuff
 const typed = new Typed('#typed', {
-  strings: ['<h1> Bruno Talarico ^500 <br> Software Developer </h1>'],
+  strings: ['<h1> Bruno Talarico, ^400 <br> <span>Software Developer.</span></h1>'],
   typeSpeed: 55,
   showCursor: false,
   contentType: 'html'
-},
+  },
 );
 
 
