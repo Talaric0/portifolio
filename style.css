@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -9,22 +9,26 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 0 4px 4px 0;
-    background-color: transparent;
+  width: 8px;
+  border-radius: 0 4px 4px 0;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 6px;
-  background-color:rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
-  background: radial-gradient(circle, rgba(0,137,187,1) 0%, rgb(141, 75, 138) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 137, 187, 1) 0%,
+    rgb(141, 75, 138) 100%
+  );
   background-attachment: fixed;
   overflow: overlay;
 }
@@ -40,7 +44,7 @@ body {
 
 .progress-bar {
   height: 10px;
-  background-color: rgba(0,0,0,0.15) !important;
+  background-color: rgba(0, 0, 0, 0.15) !important;
   border-radius: 0 5px 5px 0;
   width: 0%;
 }
@@ -53,7 +57,7 @@ body {
   position: relative;
 }
 
-#typed span{
+#typed span {
   font-weight: 300;
   opacity: 0.8;
 }
@@ -85,7 +89,7 @@ body {
   padding: 13px;
   border-radius: 50%;
   border: 1px solid #fff;
-  color:  rgb(244 233 219 / 96%);
+  color: rgb(244 233 219 / 96%);
   transition: all 0.6s;
   font-size: 32px;
   margin: 5px;
@@ -99,28 +103,28 @@ body {
 
 .typeform-share {
   width: 100%;
-  display:inline-block;
-  text-decoration:none;
+  display: inline-block;
+  text-decoration: none;
   background-color: none;
   border: 1px solid #fff;
-  color:  rgb(244 233 219 / 96%);
-  cursor:pointer;
-  font-family:Helvetica,Arial,sans-serif;
+  color: rgb(244 233 219 / 96%);
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 25px;
-  font-weight:bold;
+  font-weight: bold;
   margin: 5px;
-  line-height:50px;
-  text-align:center;
-  height:50px;
-  padding:0px 33px;
-  border-radius:25px;
-  max-width:100%;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  line-height: 50px;
+  text-align: center;
+  height: 50px;
+  padding: 0px 33px;
+  border-radius: 25px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: all 0.6s;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .typeform-share:hover {
@@ -238,7 +242,6 @@ body {
 }
 /* /ARROW up */
 
-
 /* /HEADER */
 
 /* ABOUT */
@@ -250,10 +253,10 @@ body {
 }
 
 .glass {
-  backdrop-filter: blur( 8.0px );
-  -webkit-backdrop-filter: blur( 8.0px );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 5px;
-  color:  rgb(244 233 219 / 96%);
+  color: rgb(244 233 219 / 96%);
   height: auto;
 }
 
@@ -294,11 +297,11 @@ body {
 
 .projects > a {
   text-decoration: none;
-  color:  rgb(244 233 219 / 96%);
+  color: rgb(244 233 219 / 96%);
 }
 
 .projects > a:hover {
-  color:  rgb(244 233 219 / 96%);
+  color: rgb(244 233 219 / 96%);
 }
 
 /* CARDS */
@@ -306,7 +309,7 @@ body {
 .card-trip {
   overflow: hidden;
   background: none;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 85%;
   margin: 1rem;
   border-radius: 5px;
@@ -333,10 +336,9 @@ body {
 
 .card-trip p {
   font-size: 12px;
-  opacity: .7;
+  opacity: 0.7;
   margin: 0;
 }
-
 
 .card-trip .card-trip-infos {
   padding: 16px;
@@ -350,7 +352,6 @@ body {
   margin: 35px auto;
   text-align: center;
 }
-
 
 /* /PROJECTS */
 /* EMPLOYMENT */
@@ -404,20 +405,18 @@ body {
   }
 
   .education-employment {
-  width: 90%;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .arrow-up::after {
-  bottom: -103%;
+    bottom: -103%;
+  }
 }
-}
 
-
-
-@media only screen and (min-width:601px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   .projects {
     column-gap: 0px;
   }
@@ -429,7 +428,7 @@ body {
 @media only screen and (max-height: 750px) {
   .about {
     font-size: 0.9em;
-}
+  }
   .card-trip .card-trip-infos {
     padding: 0px;
     font-size: 0.8em;
@@ -442,5 +441,4 @@ body {
   #employment {
     padding-top: 20px !important;
   }
-
 }
